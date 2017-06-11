@@ -1,0 +1,31 @@
+{
+  "name": "hotel_saket",
+  "version": "1.0.0",
+  "description": "Official Website of Hotel Saket",
+  "main": "./index.js",
+  "scripts": {
+    "clean": "rimraf build",
+    "build": "webpack",
+    "deploy": "webpack-dev-server --host 0.0.0.0 --history-api-fallback --inline --progress --colors",
+    "start": "npm run clean && npm run deploy",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "@vedvrat13",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "webpack": "^2.6.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-eslint": "^7.2.3",
+    "babel-loader": "^7.0.0",
+    "babel-preset-env": "^1.5.1",
+    "babel-preset-react": "^6.24.1",
+    "eslint": "^3.19.0",
+    "eslint-plugin-import": "^2.3.0",
+    "rimraf": "^2.6.1",
+    "webpack-dev-server": "^2.4.5"
+  }
+}
