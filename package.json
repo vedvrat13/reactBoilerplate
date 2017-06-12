@@ -8,7 +8,7 @@
     "build": "webpack",
     "deploy": "webpack-dev-server --host 0.0.0.0 --history-api-fallback --inline --progress --colors",
     "start": "npm run clean && npm run deploy",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --compilers js:babel-register --require ./test/testHelper.js -R landing --recursive ./test/**/*.js"
   },
   "author": "@vedvrat13",
   "license": "ISC",
@@ -23,10 +23,15 @@
     "babel-loader": "^7.0.0",
     "babel-preset-env": "^1.5.1",
     "babel-preset-react": "^6.24.1",
+    "chai": "^4.0.2",
+    "enzyme": "^2.8.2",
     "eslint": "^3.19.0",
     "eslint-import-resolver-webpack": "^0.8.1",
     "eslint-plugin-import": "^2.3.0",
     "eslint-plugin-react": "^7.0.1",
+    "jsdom": "^9.0.0",
+    "mocha": "^3.4.2",
+    "react-addons-test-utils": "^15.5.0",
     "rimraf": "^2.6.1",
     "webpack-dev-server": "^2.4.5"
   }

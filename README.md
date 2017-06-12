@@ -10,4 +10,13 @@
     - output: After packaging the resources, it will have the output as specified.
     - resolve: The preference given in order to find the MODULES and the extensions to be applied
     - module: How/which-one to load/exclude a module with a particular extension and which loader to be used
-    
+
+3) Testing
+    - mocha: test framework to run test suites
+        // You DESCRIBE a test Suite
+        // Behaviour is described in the IT block
+    - chai: test assertion library that lets us test the section
+        // should
+        // expect
+        // assert
+    - enzyme: to test React components by loading the component via Shallow, Mount, Render methods
