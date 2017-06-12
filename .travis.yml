@@ -3,5 +3,4 @@ node_js:
   - "7"
 scripts:
     - "npm run clean"
-    - "npm run test"
     - "npm start"
