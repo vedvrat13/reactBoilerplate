@@ -4,6 +4,9 @@
         "quotes": ["error", "single"],
         "import/no-unresolved": "error"
     },
+    "settings": {
+        "import/resolver": "webpack",
+    },
     "plugins": [
         "react",
         "import"

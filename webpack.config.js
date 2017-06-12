@@ -10,6 +10,10 @@ module.exports = {
         filename: 'bundle.js'
     },
     resolve: {
+        modules: [
+            path.resolve(__dirname + '/src'),
+            'node_modules'
+        ],
         extensions: ['.js', '.css']
     },
     devtool: 'cheap-source-map',
