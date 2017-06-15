@@ -10,6 +10,7 @@ import reducers from 'reducers';
 
 // The Main App Container
 import App from 'components/App';
+import 'styles/style.scss';
 
 const createStoreWithMiddleware = applyMiddleware()(createStore);
 

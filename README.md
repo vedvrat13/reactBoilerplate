@@ -30,3 +30,14 @@
         // Typical Middleware are logger, thunk, promise
     - Store is the place where the Data is acted upon based on the action's type.
         The payload is used to manipulate the data tree
+
+5) Styles
+        ```
+            use: [{
+               loader: "style-loader" // creates style nodes from JS strings
+            }, {
+               loader: "css-loader" // translates CSS into CommonJS
+            }, {
+               loader: "sass-loader" // compiles Sass to CSS
+            }]
+       ```
