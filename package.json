@@ -8,7 +8,7 @@
     "build": "webpack",
     "deploy": "webpack-dev-server --host 0.0.0.0 --history-api-fallback --inline --progress --colors",
     "start": "npm run clean && npm run deploy",
-    "test": "mocha --compilers js:babel-register --require ./test/testHelper.js -R landing --recursive ./test/**/*.js"
+    "test": "mocha --compilers js:babel-register --recursive ./test/**/*.js"
   },
   "author": "@vedvrat13",
   "license": "ISC",

@@ -1,5 +1,5 @@
 import React, {Component, PropTypes} from 'react';
-import {loadStore} from 'actions/actions';
+import {loadStore} from '../actions/actions';
 import {connect} from 'react-redux';
 
 export class App extends Component {
